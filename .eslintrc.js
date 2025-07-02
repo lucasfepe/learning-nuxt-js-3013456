@@ -15,5 +15,14 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'vue/multi-word-component-names': 'off',
+    'vue/no-v-html': 'off',
+    'vue/valid-template-root': 'off',
+    'vue/no-unused-vars': 'warn',
+    'vue/no-mutating-props': 'warn',
+    
+  }
 }
